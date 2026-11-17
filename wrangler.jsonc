@@ -1,7 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   // Tên Worker trên Cloudflare — phải trùng với tên dự án Cloudflare và với "service" bên dưới
-  "name": "du-hoc-ngoc-lam-anh",
+  "name": "du-hoc-ngo-lam-anh",
   "main": ".open-next/worker.js",
   "compatibility_date": "2026-11-16",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
@@ -13,7 +13,7 @@
     {
       // Worker tự gọi lại chính nó (OpenNext dùng khi làm mới trang) — tên phải trùng "name" ở trên
       "binding": "WORKER_SELF_REFERENCE",
-      "service": "du-hoc-ngoc-lam-anh"
+      "service": "du-hoc-ngo-lam-anh"
     }
   ],
   "d1_databases": [
@@ -30,7 +30,7 @@
     // Email được tự tạo tài khoản admin ở lần đăng nhập Google đầu tiên (phân cách bằng dấu phẩy)
     "ADMIN_EMAILS": "trungtamquynhchinese@gmail.com",
     // Kho GitHub chứa code web – dashboard ghi nội dung trang vào đây
-    "GITHUB_REPO": "Kitenguyen/du-hoc-ngoc-lam-anh",
+    "GITHUB_REPO": "Quynhchinese/Du-hoc-ngo-lam-anh",
     "GITHUB_BRANCH": "main"
   },
   "images": {

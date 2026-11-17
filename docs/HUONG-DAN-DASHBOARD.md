@@ -39,12 +39,12 @@ npx wrangler d1 migrations apply DB --remote
 
 ### 3. Tạo khóa GitHub (cho mục Nội dung trang)
 https://github.com/settings/personal-access-tokens → **Generate new token (fine-grained)**
-- *Repository access*: Only select repositories → `Kitenguyen/du-hoc-ngoc-lam-anh`
+- *Repository access*: Only select repositories → `Quynhchinese/Du-hoc-ngo-lam-anh`
 - *Permissions → Contents*: **Read and write**
 - Chép token.
 
 ### 4. Đặt khóa bí mật trên Cloudflare
-Cloudflare → Workers & Pages → **du-hoc-ngoc-lam-anh → Settings → Variables and Secrets** → thêm dạng **Secret**:
+Cloudflare → Workers & Pages → **du-hoc-ngo-lam-anh → Settings → Variables and Secrets** → thêm dạng **Secret**:
 - `GOOGLE_CLIENT_ID`
 - `GOOGLE_CLIENT_SECRET`
 - `GITHUB_TOKEN`
