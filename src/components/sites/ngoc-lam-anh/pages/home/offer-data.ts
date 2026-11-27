@@ -9,9 +9,9 @@ export const HERO_FLY = {
   line1: "Mở cánh cửa du học",
   line2: "Cất cánh ước mơ",
   lead:
-    "Học tiếng Trung bài bản, tư vấn du học Trung Quốc tận tâm – Ngọc Lâm Anh đồng hành cùng bạn từ lớp học đầu tiên đến chuyến bay sang giảng đường mơ ước.",
+    "Học tiếng Trung bài bản, tư vấn du học Trung Quốc tận tâm – Ngọc Lâm Anh đồng hành cùng bạn từ những bước đầu tiên đến chuyến bay sang giảng đường mơ ước.",
   shutters: ["留", "学"] as const,
-  sign: "留学中国",
+  sign: "中国留学",
 };
 
 /** Ưu đãi du học — sửa trong dashboard (Nội dung trang) hoặc file src/content/site.json */

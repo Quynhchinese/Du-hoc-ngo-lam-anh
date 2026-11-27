@@ -1,42 +1,9 @@
 import { CourseCard } from "./CourseCard";
 import { PageHead, PageShell } from "./PageShell";
-import { CALL_HREF, COURSE_GROUPS, GENERAL_INFO, JUMP_LINKS, PAGE_HEAD, PHONE_LABEL, STUDY_ABROAD_TILES, href } from "./data";
+import { CALL_HREF, COURSE_GROUPS, GENERAL_INFO, JUMP_LINKS, PAGE_HEAD, PHONE_LABEL, href } from "./data";
 
-function StudyAbroadTiles() {
-  return (
-    <div className="d4-mods" style={{ marginTop: 22 }}>
-      <h3 style={{ margin: "0 0 10px", font: "800 21px var(--display)", color: "var(--red-dk)" }}>
-        {STUDY_ABROAD_TILES.title}
-      </h3>
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(230px,1fr))", gap: 14 }}>
-        {STUDY_ABROAD_TILES.tiles.map((m) => (
-          <a
-            key={m.title}
-            href={href(m.href)}
-            style={{
-              display: "grid",
-              gap: 6,
-              textDecoration: "none",
-              color: "var(--ink)",
-              background: "#fff",
-              border: "2px solid var(--line)",
-              borderTop: `5px solid ${m.accent}`,
-              borderRadius: 16,
-              padding: 16,
-            }}
-          >
-            <span style={{ fontSize: 30 }}>{m.icon}</span>
-            <b style={{ fontSize: 18, color: "var(--red-dk)" }}>{m.title}</b>
-            <span className="muted">{m.text}</span>
-          </a>
-        ))}
-      </div>
-      <p className="muted" style={{ margin: "10px 0 0", fontSize: 14.5 }}>
-        {STUDY_ABROAD_TILES.note} <a href={href("index.html#du-hoc")}>Xem chi phí và học bổng chi tiết</a>.
-      </p>
-    </div>
-  );
-}
+// Du học Trung Quốc có khối riêng ở trang chủ (#du-hoc), không hiện trong danh sách khóa học.
+const STUDY_GROUPS = COURSE_GROUPS.filter((g) => g.id !== "du-hoc");
 
 export function CoursesPage() {
   return (
@@ -51,7 +18,7 @@ export function CoursesPage() {
             ))}
           </div>
         </div>
-        {COURSE_GROUPS.map((g) => (
+        {STUDY_GROUPS.map((g) => (
           <section className={`block ${g.tone}`} id={g.id} key={g.id}>
             <div className="wrap">
               <div className="head">
@@ -64,7 +31,6 @@ export function CoursesPage() {
                   <CourseCard course={c} key={c.id} />
                 ))}
               </div>
-              {g.id === "du-hoc" && <StudyAbroadTiles />}
             </div>
           </section>
         ))}
@@ -73,7 +39,8 @@ export function CoursesPage() {
             <div className="card">
               <b>Thông tin chung</b>
               <p className="muted" style={{ marginTop: 6 }}>
-                {GENERAL_INFO} Tư vấn qua điện thoại / Zalo <a href={CALL_HREF}>{PHONE_LABEL}</a>.
+                {GENERAL_INFO} Tư vấn qua điện thoại / Zalo <a href={CALL_HREF}>{PHONE_LABEL}</a>. Thông tin du học Trung Quốc:{" "}
+                <a href={href("index.html#du-hoc")}>xem tại trang chủ</a>.
               </p>
             </div>
           </div>

@@ -2,20 +2,19 @@
 // Nguồn: tài liệu "TƯ VẤN DU HỌC TQ" của trung tâm (11/2026). Trợ cấp tính bằng tệ (NDT).
 
 export const DU_HOC = {
-  zh: "留学中国",
+  zh: "中国留学",
   title: "Du học Trung Quốc",
   intro:
     "Tư vấn chọn hệ học, chọn trường và săn học bổng CIS, CSC, học bổng tỉnh, học bổng trường. Trung tâm lo hồ sơ, kế hoạch học tập và đồng hành đến khi bạn nhập học.",
 
   reasons: [
-    { zh: "四种学制", title: "4 hệ học", text: "1 năm tiếng, đại học, thạc sĩ, tiến sĩ" },
     { zh: "全额奖学金", title: "Học bổng toàn phần", text: "Miễn 100% học phí và ký túc xá, trợ cấp đến 3.500 tệ/tháng" },
     { zh: "多个志愿", title: "Apply nhiều nguyện vọng", text: "Apply 1 hay nhiều trường đều không phát sinh thêm phí" },
     { zh: "全程陪伴", title: "Trung tâm viết hồ sơ", text: "Kế hoạch học tập, thư giới thiệu do trung tâm viết và hỗ trợ" },
   ],
   more: { value: "4", label: "loại học bổng: CIS · CSC · Tỉnh · Trường" },
 
-  levelsTitle: "Các hệ học & độ tuổi",
+  levelsHead: { zh: "四种学制", title: "4 hệ học", text: "Chọn hệ theo độ tuổi, trình độ tiếng Trung và mục tiêu của bạn" },
   levels: [
     { title: "1 năm tiếng", age: "18 – 35 tuổi", items: ["Học tiếng Trung tại trường", "Nền tảng trước khi vào chuyên ngành", "Có học bổng CIS và học bổng trường"] },
     { title: "Đại học", age: "18 – 22 tuổi", items: ["Đủ 4 loại học bổng", "Xét GPA lớp 10 – 11 và kì I lớp 12", "Cần tín chỉ CSCA với học bổng CIS, trường"] },
@@ -109,7 +108,7 @@ export const DU_HOC = {
       "Kế hoạch học tập, thư giới thiệu do trung tâm viết – học sinh chỉ cần đọc và nắm nội dung trước buổi phỏng vấn",
       "Luyện phỏng vấn online (100% hồ sơ đều phỏng vấn; một số trường yêu cầu quay video thuyết trình)",
       "Apply nhiều trường, nhiều loại học bổng để giảm rủi ro trượt – không phát sinh thêm phí",
-      "Đào tạo tín chỉ CSCA miễn phí cho học viên của trung tâm",
+      "Lớp luyện thi CSCA do giáo viên bản ngữ trực tiếp giảng dạy – miễn phí cho học viên của trung tâm",
       "Dịch thuật hồ sơ 2 triệu/bộ – miễn phí với học viên có HSK6",
       "Đặt cọc khi nộp hồ sơ, đóng phần còn lại khi có giấy JW201/JW202",
     ],

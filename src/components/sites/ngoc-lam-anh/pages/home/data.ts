@@ -40,14 +40,14 @@ export const COURSES_HEAD = {
   zh: "热门课程",
   title: "Các khóa học",
   intro:
-    "Tiếng Trung giao tiếp, chương trình HSK 1 – 9 và tiếng Trung trẻ em YCT 1 – 4 – test trình độ và học thử miễn phí, ca sáng – chiều – tối linh hoạt.",
+    "Tiếng Trung giao tiếp, tiếng Trung thương mại, tiếng Trung trẻ em và luyện thi HSK theo chuẩn HSK 3.0 (HSK 1 – 9). Học thử miễn phí, lịch học linh hoạt sáng – chiều – tối, lộ trình bài bản phù hợp với mọi trình độ và mục tiêu học tập.",
 };
 
 /** Học phí chưa được công bố — trung tâm điền theo id khóa học (id trong COURSE_GROUPS). */
 export const COURSE_FEES: Record<string, string> = SITE.courseFees;
 
 /** Khóa học hiện trên trang chủ (đủ danh sách ở trang Khóa học) */
-export const HOME_COURSE_IDS = ["tieng-trung-giao-tiep", "hsk-1", "hsk-3", "hsk-4", "hsk-5", "yct-1"];
+export const HOME_COURSE_IDS = ["tieng-trung-giao-tiep", "tieng-trung-thuong-mai", "yct-1", "hsk-1", "hsk-3", "hsk-4"];
 export const FEE_PLACEHOLDER = "[Học phí]";
 
 export const PATH = {
@@ -55,7 +55,7 @@ export const PATH = {
   title: "Lộ trình học",
   intro: "Từ sơ cấp đến cao cấp theo Khung tiêu chuẩn năng lực tiếng Trung quốc tế GF0025-2021.",
   steps: [
-    { ic: "初", title: "HSK 1 – 2", goal: "Sơ cấp", text: "48 buổi · khoảng 1.272 từ" },
+    { ic: "初", title: "HSK 1 – 2", goal: "Sơ cấp", text: "44 buổi · khoảng 1.272 từ" },
     { ic: "三", title: "HSK 3", goal: "Sơ cấp", text: "40 buổi · khoảng 2.245 từ" },
     { ic: "四", title: "HSK 4", goal: "Trung cấp", text: "45 buổi · khoảng 3.245 từ" },
     { ic: "五", title: "HSK 5 – 6", goal: "Trung cấp", text: "135 buổi · khoảng 5.456 từ" },
@@ -220,7 +220,7 @@ export const TESTIMONIALS_HEAD = {
 export const TESTIMONIALS: Testimonial[] = [
   {
     quote:
-      "Em bắt đầu từ con số 0, học YTC rồi lên HSK4 trong khoảng một năm. Lớp nhỏ nên cô sửa phát âm cho từng người, giờ em tự tin nói chuyện với người Trung hơn hẳn.",
+      "Em bắt đầu từ con số 0, học giao tiếp rồi lên HSK4 trong khoảng một năm. Lớp nhỏ nên cô sửa phát âm cho từng người, giờ em tự tin nói chuyện với người Trung hơn hẳn.",
     name: "Minh Anh",
     course: "Luyện thi HSK4",
     initials: "MA",

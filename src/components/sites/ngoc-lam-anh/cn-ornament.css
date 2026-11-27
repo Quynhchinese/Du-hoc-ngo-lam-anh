@@ -1,0 +1,59 @@
+/* Họa tiết Trung Hoa cho thẻ khóa học và thẻ giáo viên – FILE SINH TỰ ĐỘNG, sửa scripts/gen-cn-ornament.py rồi chạy lại.
+   Mây như ý (đỉnh thẻ), sóng nước 海水纹 màu ngọc lam, viền vàng, hoa văn chữ hồi 回纹 (thẻ khóa học);
+   cuộn chiếu thư / bảng vàng: lụa vàng, viền gấm đỏ, trục gỗ, dấu son (ảnh giáo viên). */
+:root{
+  --cn-edge-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 46' preserveAspectRatio='none'%3E%3Cpath d='M0,46 L0,40 Q0,30 12,30 C24,30 30,24 34,18 C40,10 54,8 62,14 C70,20 82,20 90,12 C104,0 124,10 134,10 L160,10 C172,10 182,2 200,2 C218,2 228,10 240,10 L266,10 C276,10 296,0 310,12 C318,20 330,20 338,14 C346,8 360,10 366,18 C370,24 376,30 388,30 Q400,30 400,40 L400,46 Z' fill='%23000'/%3E%3C/svg%3E");
+  --cn-edge-line:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 46' preserveAspectRatio='none'%3E%3Cdefs%3E%3ClinearGradient id='gh' x1='0' y1='0' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23b98424'/%3E%3Cstop offset='.5' stop-color='%23ffe9a8'/%3E%3Cstop offset='1' stop-color='%23b98424'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M0,46 L0,40 Q0,30 12,30 C24,30 30,24 34,18 C40,10 54,8 62,14 C70,20 82,20 90,12 C104,0 124,10 134,10 L160,10 C172,10 182,2 200,2 C218,2 228,10 240,10 L266,10 C276,10 296,0 310,12 C318,20 330,20 338,14 C346,8 360,10 366,18 C370,24 376,30 388,30 Q400,30 400,40 L400,46' fill='none' stroke='%237a4f0c' stroke-width='5' vector-effect='non-scaling-stroke' stroke-linejoin='round' transform='translate(0,1.2)'/%3E%3Cpath d='M0,46 L0,40 Q0,30 12,30 C24,30 30,24 34,18 C40,10 54,8 62,14 C70,20 82,20 90,12 C104,0 124,10 134,10 L160,10 C172,10 182,2 200,2 C218,2 228,10 240,10 L266,10 C276,10 296,0 310,12 C318,20 330,20 338,14 C346,8 360,10 366,18 C370,24 376,30 388,30 Q400,30 400,40 L400,46' fill='none' stroke='url(%23gh)' stroke-width='3.5' vector-effect='non-scaling-stroke' stroke-linejoin='round' transform='translate(0,1.2)'/%3E%3C/svg%3E");
+  --cn-waves:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='20' viewBox='0 0 40 20'%3E%3Crect width='40' height='20' fill='%2317766f'/%3E%3Ccircle cx='0' cy='10' r='20' fill='%2317766f' stroke='%230d4f4a' stroke-width='1.2'/%3E%3Cg fill='none' stroke='%2362c3b4' stroke-width='1.3'%3E%3Ccircle cx='0' cy='10' r='17'/%3E%3Ccircle cx='0' cy='10' r='12.5'/%3E%3Ccircle cx='0' cy='10' r='8'/%3E%3Ccircle cx='0' cy='10' r='3.5'/%3E%3C/g%3E%3Ccircle cx='40' cy='10' r='20' fill='%2317766f' stroke='%230d4f4a' stroke-width='1.2'/%3E%3Cg fill='none' stroke='%2362c3b4' stroke-width='1.3'%3E%3Ccircle cx='40' cy='10' r='17'/%3E%3Ccircle cx='40' cy='10' r='12.5'/%3E%3Ccircle cx='40' cy='10' r='8'/%3E%3Ccircle cx='40' cy='10' r='3.5'/%3E%3C/g%3E%3Ccircle cx='20' cy='20' r='20' fill='%2317766f' stroke='%230d4f4a' stroke-width='1.2'/%3E%3Cg fill='none' stroke='%2362c3b4' stroke-width='1.3'%3E%3Ccircle cx='20' cy='20' r='17'/%3E%3Ccircle cx='20' cy='20' r='12.5'/%3E%3Ccircle cx='20' cy='20' r='8'/%3E%3Ccircle cx='20' cy='20' r='3.5'/%3E%3C/g%3E%3C/svg%3E");
+  --cn-cloud:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 40'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23fff1c4'/%3E%3Cstop offset='.45' stop-color='%23e2b04a'/%3E%3Cstop offset='1' stop-color='%23a0701a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M8,34 C2,34 2,24 9,23 C8,14 20,11 25,18 C27,8 41,6 45,15 C49,4 71,4 75,15 C79,6 93,8 95,18 C100,11 112,14 111,23 C118,24 118,34 112,34 Z' fill='url(%23g)' stroke='%237a4f0c' stroke-width='1.6'/%3E%3Cg fill='none' stroke='%238a5c12' stroke-width='1.6' stroke-linecap='round'%3E%3Cpath d='M44,26 c0,-7 9,-9 12,-3 c2,4 -3,7 -5,4'/%3E%3Cpath d='M76,26 c0,-7 -9,-9 -12,-3 c-2,4 3,7 5,4'/%3E%3Cpath d='M20,28 c1,-4 6,-5 8,-1'/%3E%3Cpath d='M100,28 c-1,-4 -6,-5 -8,-1'/%3E%3C/g%3E%3C/svg%3E");
+  --cn-brocade:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%238a0e14'/%3E%3Cpath d='M2,13 H12 V3 H5 V9 H9 V6' fill='none' stroke='%23e9c063' stroke-width='1.3' stroke-linecap='square'/%3E%3Ccircle cx='14.5' cy='14.5' r='.9' fill='%23f7dc94'/%3E%3C/svg%3E");
+  --cn-silk:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='40' viewBox='0 0 64 40'%3E%3Cg fill='none' stroke='%23b8891f' stroke-opacity='.16' stroke-width='1.2' stroke-linecap='round'%3E%3Cpath d='M6,16 c0,-6 8,-7 10,-2 c2,-6 11,-5 11,1 c4,-1 6,4 2,6 H8 c-4,0 -5,-5 -2,-5'/%3E%3Cpath d='M38,36 c0,-6 8,-7 10,-2 c2,-6 11,-5 11,1 c4,-1 6,4 2,6 H40 c-4,0 -5,-5 -2,-5'/%3E%3C/g%3E%3C/svg%3E");
+  --cn-meander:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12' viewBox='0 0 24 12'%3E%3Cpath d='M0,11 H10 V3 H4 V7 H7' fill='none' stroke='%23e2b04a' stroke-width='1.6'/%3E%3Cpath d='M12,11 H22 V3 H16 V7 H19' fill='none' stroke='%23e2b04a' stroke-width='1.6'/%3E%3C/svg%3E");
+}
+
+/* ===== Thẻ khóa học: đỉnh mây như ý, viền vàng, dải sóng nước ở chân thẻ ===== */
+.course{background:transparent;border:0!important;border-radius:0 0 22px 22px;overflow:visible;box-shadow:none;filter:drop-shadow(0 14px 22px rgba(92,7,11,.2))}
+.course:hover{box-shadow:none;filter:drop-shadow(0 22px 30px rgba(92,7,11,.3))}
+.course .cv{min-height:200px;padding:60px 22px 18px;
+  -webkit-mask:var(--cn-edge-mask) 0 0/100% 46px no-repeat,linear-gradient(#000 0 0) 0 45px/100% 100% no-repeat;
+          mask:var(--cn-edge-mask) 0 0/100% 46px no-repeat,linear-gradient(#000 0 0) 0 45px/100% 100% no-repeat;
+  box-shadow:inset 3px 0 0 var(--gold),inset -3px 0 0 var(--gold)}
+.course .cv::before{content:"";position:absolute;inset:0 0 auto;height:46px;background:var(--cn-edge-line) 0 0/100% 100% no-repeat;z-index:2;pointer-events:none}
+.course .cv::after{content:"";position:absolute;left:0;right:0;bottom:0;height:12px;background:var(--cn-meander) 0 0/24px 12px repeat-x,var(--red-deep);border-top:1px solid var(--gold)}
+.course .cv .tag{top:52px}
+.course .cv h3{margin-top:30px}
+.course .cv .dur{margin-bottom:12px}
+.course .cv .big{top:6px}
+.course .bd{position:relative;background:#fffdf8;border:3px solid var(--gold);border-top:0;border-radius:0 0 22px 22px;overflow:hidden;padding-bottom:62px;
+  box-shadow:inset 0 0 0 5px #fffdf8,inset 0 0 0 6px rgba(226,176,74,.55)}
+.course .bd::after{content:"";position:absolute;left:0;right:0;bottom:0;height:34px;background:var(--cn-waves) 0 0/40px 20px repeat;border-top:3px solid var(--gold)}
+.course .bd::before{content:"";position:absolute;left:50%;bottom:22px;width:84px;height:28px;translate:-50% 0;background:var(--cn-cloud) center/contain no-repeat;z-index:1}
+.course dl i{border-radius:50%;background:radial-gradient(circle at 35% 30%,#fffaf0,#f8e6bf);box-shadow:inset 0 0 0 1.5px var(--gold)}
+.course-detail{background:#fff7e8;border:1px solid rgba(226,176,74,.55)}
+.course-detail b{display:flex;align-items:center;gap:8px}
+.course-detail b::before{content:"";flex:none;width:18px;height:9px;background:var(--cn-meander) 0 0/18px 9px no-repeat;filter:brightness(.7)}
+section.red .course .bd{border-color:var(--gold-lt)}
+
+/* ===== Thẻ giáo viên: ảnh trên cuộn chiếu thư – lụa vàng, viền gấm đỏ, trục gỗ sơn son đầu bịt vàng, dấu son ===== */
+.teacher{background:linear-gradient(180deg,#fffaf0,#fdf0d6);border:2px solid var(--gold)!important;padding:22px 18px 0}
+.teacher .ph,.lead-t .ph{position:relative;aspect-ratio:auto;overflow:visible;padding:12px;border:7px solid transparent;
+  background:var(--cn-silk) 0 0/64px 40px,linear-gradient(160deg,#fff4cf,#f3d98f 55%,#ecc96f) padding-box,var(--cn-brocade) 0 0/16px 16px border-box;
+  box-shadow:0 0 0 1px #c9972f,0 10px 22px rgba(60,0,4,.22)}
+.teacher .ph img,.lead-t .ph img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border:0!important;border-radius:2px!important;
+  background:radial-gradient(circle at 50% 35%,#fffdf6,#f3dcae 75%);box-shadow:0 0 0 2px #b8891f,0 0 0 4px #fff4cf,0 0 0 5px #b8891f!important}
+/* Trục cuộn trên và dưới: thân gỗ sơn son, 2 đầu bịt vàng nhô ra ngoài */
+.teacher .ph::before,.teacher .ph::after,.lead-t .ph::before,.lead-t .ph::after{content:"";position:absolute;left:-17px;right:-17px;height:13px;border-radius:7px;pointer-events:none;
+  background:radial-gradient(circle at 50% 35%,#fff3c9,#e2b04a 50%,#7a4f0c) 0 0/13px 13px no-repeat,radial-gradient(circle at 50% 35%,#fff3c9,#e2b04a 50%,#7a4f0c) 100% 0/13px 13px no-repeat,
+    linear-gradient(180deg,#c0392b,#7e0a10 55%,#4a0507) 50% 0/calc(100% - 22px) 100% no-repeat}
+.teacher .ph::before,.lead-t .ph::before{top:-17px}
+.teacher .ph::after,.lead-t .ph::after{bottom:-17px}
+/* Dấu son đỏ góc ảnh */
+.seal{position:absolute;right:16px;bottom:18px;z-index:1;width:34px;height:34px;display:grid;place-items:center;rotate:-6deg;
+  background:#b5121b;color:#fff3df;border-radius:4px;box-shadow:inset 0 0 0 2px #b5121b,inset 0 0 0 3px #fff3df;
+  font:400 13px/1 var(--brush);writing-mode:vertical-rl;letter-spacing:1px;opacity:.92}
+.lead-t .seal{width:44px;height:44px;font-size:17px;right:22px;bottom:26px}
+.teacher:hover .ph img{transform:none}
+.teacher .plate{background:transparent!important;padding-top:22px!important}
+.lead-t .ph .ribbon{z-index:2;bottom:-34px}
+@media (max-width:680px){.teacher{padding:18px 13px 0}.teacher .ph{padding:8px;border-width:5px}.teacher .ph::before,.teacher .ph::after{left:-12px;right:-12px}.seal{width:28px;height:28px;font-size:11px;right:12px;bottom:14px}}
+@media (max-width:820px){.lead-t .ph img{aspect-ratio:4/5}}

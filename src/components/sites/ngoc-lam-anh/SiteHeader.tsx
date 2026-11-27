@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, type CSSProperties, type MouseEvent } from "react";
+import "./palace-header.css";
 import "./wordmark.css";
 import { BRAND, CALL_HREF, CONTACT, NAV, PHONE_LABEL, REGISTER_HREF, href, slugOf, type NavItem, type NavLink } from "./data";
 
@@ -12,6 +13,21 @@ function isActive(item: NavItem, active: string): boolean {
 
 const MOBILE_MAX = 1100;
 const NBSP = String.fromCharCode(160);
+
+/**
+ * Chữ "C" của NGỌC vẽ thành máy bay cách điệu: thân chữ C là đường bay vòng,
+ * đầu trên của chữ là chiếc máy bay đang cất cánh – vẫn đọc rõ là chữ C.
+ */
+function PlaneC() {
+  return (
+    <svg className="wm-plane-c" viewBox="0 0 30 30" aria-hidden="true">
+      <path className="arc" d="M17.6 5.2 A11 11 0 1 0 20.4 23.2" />
+      <g className="plane" transform="translate(23.4 4.4) rotate(-36) scale(1.08)">
+        <path d="M7 0 L2.6 -1.1 L-.6 -6 L-2.5 -6 L-.9 -1.2 L-4.4 -1 L-6 -3 L-7.3 -3 L-6.2 0 L-7.3 3 L-6 3 L-4.4 1 L-.9 1.2 L-2.5 6 L-.6 6 L2.6 1.1 Z" />
+      </g>
+    </svg>
+  );
+}
 
 function NavAnchor({ link, className }: { link: NavLink; className?: string }) {
   const cls = [link.className, className].filter(Boolean).join(" ") || undefined;
@@ -94,7 +110,7 @@ export function SiteHeader({ active = "" }: { active?: string }) {
                   <span className="wm-vi">
                     {Array.from(line).map((ch, i) => (
                       <span key={i} style={{ "--i": i + n * 4 } as CSSProperties}>
-                        {ch === " " ? NBSP : ch}
+                        {ch === " " ? NBSP : n === 1 && ch === "C" && line.indexOf("C") === i ? <PlaneC /> : ch}
                       </span>
                     ))}
                   </span>

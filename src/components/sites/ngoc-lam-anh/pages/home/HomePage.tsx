@@ -92,7 +92,7 @@ export function HomePage() {
   const study = COURSE_GROUPS.filter((g) => g.id !== "du-hoc");
   const all = study.flatMap((g) => g.courses);
   const courses = HOME_COURSE_IDS.map((id) => all.find((c) => c.id === id)).filter((c): c is Course => Boolean(c));
-  const total = COURSE_GROUPS.reduce((n, g) => n + g.courses.length, 0);
+  const total = all.length;
   return (
     <PageShell active="">
       <div className="pg-home">
@@ -171,6 +171,9 @@ export function HomePage() {
               <div className="ph">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={LEAD_TEACHER.photo} alt={`Giáo viên ${LEAD_TEACHER.name}`} loading="lazy" />
+                <span className="seal" aria-hidden="true">
+                  玉林
+                </span>
                 <span className="ribbon">{LEAD_TEACHER.ribbon}</span>
               </div>
               <div>
@@ -190,12 +193,16 @@ export function HomePage() {
                 </div>
               </div>
             </div>
+            <h3 className="team-sub">Giáo viên tại trung tâm</h3>
             <div className="teachers">
               {TEACHERS.map((t) => (
                 <a className="teacher" key={t.name} href={t.url} target="_blank" rel="noopener" title={`Hồ sơ giáo viên ${t.name}`}>
                   <div className="ph">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src={t.photo} alt={`Giáo viên ${t.name}`} loading="lazy" />
+                    <span className="seal" aria-hidden="true">
+                      玉林
+                    </span>
                   </div>
                   <div className="plate">
                     <b>{t.name}</b>

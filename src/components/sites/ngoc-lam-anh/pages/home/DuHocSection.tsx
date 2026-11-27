@@ -2,9 +2,9 @@ import { href } from "../../data";
 import { DU_HOC } from "./du-hoc-data";
 import "./du-hoc.css";
 
-function Card({ title, items, badge }: { title: string; items: string[]; badge?: string }) {
+function Card({ title, items, badge, className }: { title: string; items: string[]; badge?: string; className?: string }) {
   return (
-    <div className="dh-card">
+    <div className={className ? `dh-card ${className}` : "dh-card"}>
       {badge && <span className="dh-badge">{badge}</span>}
       <b>{title}</b>
       <ul>
@@ -41,11 +41,17 @@ export function DuHocSection() {
           </div>
         </div>
 
-        <h3 className="dh-sub">{d.levelsTitle}</h3>
-        <div className="dh-cols c4">
-          {d.levels.map((l) => (
-            <Card key={l.title} title={l.title} items={l.items} badge={l.age} />
-          ))}
+        <div className="dh-levels">
+          <div className="dh-levels-head">
+            <span className="zh">{d.levelsHead.zh}</span>
+            <b>{d.levelsHead.title}</b>
+            <span>{d.levelsHead.text}</span>
+          </div>
+          <div className="dh-cols c4">
+            {d.levels.map((l, i) => (
+              <Card key={l.title} title={l.title} items={l.items} badge={l.age} className={`lv lv${i + 1}`} />
+            ))}
+          </div>
         </div>
         <div className="dh-self">
           <b>{d.selfFunded.title}</b>

@@ -115,6 +115,8 @@ section.red .head p,section.deep .head p{color:#ffdcd5}
 
 /* Khóa học */
 .courses{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+/* Nhóm chỉ có 1 khóa (giao tiếp, thương mại): thẻ rộng hơn, căn giữa */
+.courses:has(> :only-child){grid-template-columns:minmax(0,520px);justify-content:center}
 @media (max-width:920px){.courses{grid-template-columns:1fr;max-width:560px;margin-inline:auto}}
 .course{position:relative;background:#fff;border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;box-shadow:0 14px 34px rgba(92,7,11,.12);border:1px solid var(--line);transition:transform .2s,box-shadow .2s}
 .course:hover{transform:translateY(-4px);box-shadow:0 22px 44px rgba(92,7,11,.2)}

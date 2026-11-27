@@ -6,8 +6,16 @@ header.site .brand .wordmark .wm-vi-block{display:flex;flex-direction:column;gap
 header.site .brand .wordmark span{font:inherit;color:inherit;line-height:inherit}
 header.site .brand .wordmark .wm-line{display:grid;align-items:center;justify-items:start}
 header.site .brand .wordmark .wm-vi,header.site .brand .wordmark .wm-zh{display:flex;white-space:nowrap}
-header.site .brand .wordmark .l1{font:800 18px/1.1 var(--display);letter-spacing:.22em;color:var(--gold-lt)}
-header.site .brand .wordmark .l2{font:900 27px/1.1 var(--display);letter-spacing:.03em;color:#fff;text-shadow:0 2px 0 rgba(92,7,11,.55)}
+/* Dòng 1 chữ viết tay bay bướm, dòng 2 chữ có chân sang trọng ánh vàng */
+header.site .brand .wordmark .l1{font:700 25px/1 "Dancing Script",cursive;letter-spacing:.02em;color:var(--gold-lt);margin-left:2px;text-shadow:0 2px 0 rgba(92,7,11,.6)}
+header.site .brand .wordmark .l2{font:900 27px/1.05 "Playfair Display",Georgia,serif;letter-spacing:.04em;color:#fff;text-shadow:0 2px 0 rgba(92,7,11,.65)}
+header.site .brand .wordmark .l2 .wm-vi>span{background:linear-gradient(180deg,#fff 30%,#ffe9b0 62%,#f2c35a);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none;filter:drop-shadow(0 2px 0 rgba(92,7,11,.7))}
+/* Chữ C máy bay */
+header.site .brand .wordmark .wm-plane-c{display:inline-block;width:.74em;height:.78em;vertical-align:-.02em;overflow:visible;margin:0 .02em}
+header.site .brand .wordmark .wm-plane-c .arc{fill:none;stroke:#fff3d6;stroke-width:4.6;stroke-linecap:round;filter:drop-shadow(0 1.5px 0 rgba(92,7,11,.65))}
+header.site .brand .wordmark .wm-plane-c .plane{fill:var(--gold-lt);stroke:#8a5c12;stroke-width:.6}
+header.site .brand .wordmark .wm-plane-c .plane path{animation:nla-plane-bob 3s ease-in-out infinite}
+@keyframes nla-plane-bob{0%,100%{translate:0 0}50%{translate:1.2px -1px}}
 header.site .brand .wordmark .wm-zh{font:400 36px/1 var(--brush);letter-spacing:.06em;color:var(--gold-lt);text-shadow:0 2px 0 rgba(92,7,11,.55)}
 header.site .brand .wordmark .wm-vi>span,header.site .brand .wordmark .wm-zh>span{display:inline-block;transform-origin:50% 60%;
   animation:9s cubic-bezier(.55,.05,.35,1) calc(var(--i) * 55ms) infinite both}
@@ -26,12 +34,12 @@ header.site .brand:hover .wordmark .wm-vi>span,header.site .brand:hover .wordmar
 }
 @media (min-width:1101px) and (max-width:1450px){
   header.site .brand img{width:52px;height:52px}
-  header.site .brand .wordmark .l1{font-size:16px}
+  header.site .brand .wordmark .l1{font-size:22px}
   header.site .brand .wordmark .l2{font-size:23px}header.site .brand .wordmark .wm-zh{font-size:32px}
 }
 @media (max-width:640px){
   header.site .brand img{width:46px;height:46px}
-  header.site .brand .wordmark .l1{font-size:14px}
+  header.site .brand .wordmark .l1{font-size:19px}
   header.site .brand .wordmark .l2{font-size:19px}header.site .brand .wordmark .wm-zh{font-size:28px}
 }
 /* Người dùng tắt chuyển động: chỉ giữ dòng tiếng Việt */
