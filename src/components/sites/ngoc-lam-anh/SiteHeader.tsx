@@ -15,17 +15,17 @@ const MOBILE_MAX = 1100;
 const NBSP = String.fromCharCode(160);
 
 /**
- * Chữ "C" của NGỌC vẽ thành máy bay cách điệu: thân chữ C là đường bay vòng,
- * đầu trên của chữ là chiếc máy bay đang cất cánh – vẫn đọc rõ là chữ C.
+ * Chữ "C" của NGỌC: giữ nguyên chữ C của font logo (Playfair Display),
+ * gắn một chiếc máy bay nhỏ ở đầu trên của chữ như đang cất cánh khỏi nét chữ.
  */
 function PlaneC() {
   return (
-    <svg className="wm-plane-c" viewBox="0 0 30 30" aria-hidden="true">
-      <path className="arc" d="M17.6 5.2 A11 11 0 1 0 20.4 23.2" />
-      <g className="plane" transform="translate(23.4 4.4) rotate(-36) scale(1.08)">
+    <span className="wm-c">
+      C
+      <svg className="wm-plane" viewBox="-8 -7 16 14" aria-hidden="true">
         <path d="M7 0 L2.6 -1.1 L-.6 -6 L-2.5 -6 L-.9 -1.2 L-4.4 -1 L-6 -3 L-7.3 -3 L-6.2 0 L-7.3 3 L-6 3 L-4.4 1 L-.9 1.2 L-2.5 6 L-.6 6 L2.6 1.1 Z" />
-      </g>
-    </svg>
+      </svg>
+    </span>
   );
 }
 

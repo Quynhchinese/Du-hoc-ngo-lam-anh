@@ -10,11 +10,10 @@ header.site .brand .wordmark .wm-vi,header.site .brand .wordmark .wm-zh{display:
 header.site .brand .wordmark .l1{font:700 25px/1 "Dancing Script",cursive;letter-spacing:.02em;color:var(--gold-lt);margin-left:2px;text-shadow:0 2px 0 rgba(92,7,11,.6)}
 header.site .brand .wordmark .l2{font:900 27px/1.05 "Playfair Display",Georgia,serif;letter-spacing:.04em;color:#fff;text-shadow:0 2px 0 rgba(92,7,11,.65)}
 header.site .brand .wordmark .l2 .wm-vi>span{background:linear-gradient(180deg,#fff 30%,#ffe9b0 62%,#f2c35a);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none;filter:drop-shadow(0 2px 0 rgba(92,7,11,.7))}
-/* Chữ C máy bay */
-header.site .brand .wordmark .wm-plane-c{display:inline-block;width:.74em;height:.78em;vertical-align:-.02em;overflow:visible;margin:0 .02em}
-header.site .brand .wordmark .wm-plane-c .arc{fill:none;stroke:#fff3d6;stroke-width:4.6;stroke-linecap:round;filter:drop-shadow(0 1.5px 0 rgba(92,7,11,.65))}
-header.site .brand .wordmark .wm-plane-c .plane{fill:var(--gold-lt);stroke:#8a5c12;stroke-width:.6}
-header.site .brand .wordmark .wm-plane-c .plane path{animation:nla-plane-bob 3s ease-in-out infinite}
+/* Chữ C máy bay: chữ C thật của font, máy bay vàng đậu ở đầu trên của chữ */
+header.site .brand .wordmark .wm-c{position:relative;display:inline-block}
+header.site .brand .wordmark .wm-plane{position:absolute;right:-.17em;top:-.06em;width:.46em;height:.4em;overflow:visible;rotate:-34deg;
+  fill:var(--gold-lt);stroke:#7a4f0c;stroke-width:.7;filter:drop-shadow(0 1px 0 rgba(92,7,11,.7));animation:nla-plane-bob 3s ease-in-out infinite}
 @keyframes nla-plane-bob{0%,100%{translate:0 0}50%{translate:1.2px -1px}}
 header.site .brand .wordmark .wm-zh{font:400 36px/1 var(--brush);letter-spacing:.06em;color:var(--gold-lt);text-shadow:0 2px 0 rgba(92,7,11,.55)}
 header.site .brand .wordmark .wm-vi>span,header.site .brand .wordmark .wm-zh>span{display:inline-block;transform-origin:50% 60%;
